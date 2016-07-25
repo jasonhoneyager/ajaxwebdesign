@@ -1,0 +1,23 @@
+{
+  "name": "ajaxwebdesign",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.14.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jasonhoneyager/ajaxwebdesign.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jasonhoneyager/ajaxwebdesign/issues"
+  },
+  "homepage": "https://github.com/jasonhoneyager/ajaxwebdesign#readme"
+}
