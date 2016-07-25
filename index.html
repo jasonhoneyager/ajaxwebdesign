@@ -11,6 +11,40 @@
         anonymous ">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <script>
+        $(document).ready(function(){
+            $("#hide").click(function(){
+                $("p").hide();
+            });
+            $("#show").click(function(){
+                $("p").show();
+            });
+        });
+
+        $(document).ready(function(){
+            $("#html").click(function(){
+                $("#eatheria").html("<strong>Buy My Book!</strong>");
+            });
+        });
+
+        $(document).ready(function(){
+            $("#attr").click(function(){
+                $("#beauty").attr("width", "900");
+            });
+        });
+
+        $(document).ready(function(){
+            $("#val").click(function(){
+                $("input:text").val("Rick Sanchez");
+            });
+        });
+
+        $(document).ready(function(){
+            $("img").on("click", function(){
+                alert("Buy My Book!");
+            });
+        });
+        </script>
     </head>
 
     <body>
@@ -35,6 +69,13 @@
             </div>
         </nav>
         <br>
+
+        <button id="hide">Hide</button>
+        <button id="show">Show</button>
+        <button id="html">.html</button>
+        <button id="attr">.attr</button>
+        <button id="val">.val</button>
+
         <div class="container">
             <div class="row">
                 <div class="col-sm-4">
@@ -43,7 +84,7 @@
                 <div class="col-sm-2">
                 </div>
                 <div class="col-sm-6">
-                    <img src="beauty.jpg" alt="Image for Main Page" height="237px";>
+                    <img id="beauty" src="beauty.jpg" alt="Image for Main Page" height="237px";>
                 </div>
             </div>
         </div>
@@ -56,7 +97,7 @@
                     <p>Welcome to the digital hub of Lively Literature!  Here you'll find information about upcoming novels, past books, giveaways/contests and sales on books.  Check out my blog on writing news, updates on current projects, musing/tips on writing and more!  I also offer freelance editing and writing services.  See the links below for more information:</p>
                     <br>
                     <p><strong>Find Out More About Editing Services <a href="editing-services.html">Here</a> And Writing Services <a href="writing-services.html">Here</a>.</strong></p><br>
-                    <p><i><strong>Novel</strong></i><br>
+                    <p id="eatheria"><i><strong>Novel</strong></i><br>
                     <img src="cover1.jpg" alt="Eatheria Cover"><br>
                     <a href="published-works.html#eatheria">Click here to view more details on where you can buy the book.</a><br></p>
                     <p><strong>Subscribe to the Newsletter to Get a Free Short Story from the World of Eatheria!</strong><br>Your Name<br>
@@ -68,14 +109,14 @@
                         <input type="text" name="email">
                     </form>
                     <br>
-                    <i>All contact information is strictly confidential.  I will not sell, distribute or make your information public in any way.</i>
+                    <i>All contact information is strictly confidential.  I will not sell, distribute or make your information public in any way.</i></p>
 
                 
                 </div>
-                <div class="col-sm-4">
+                <div id="eatheria" class="col-sm-4">
                     <p><strong>Eatheria</strong><br>
                     <img src="cover1.jpg" alt="Eatheria Cover"><br>
-                    A fantasy novel about spiritual searches, self-identity amid oppression and elemental magic. <a href="published-works.html#eatheria">Get it now!</a>
+                    A fantasy novel about spiritual searches, self-identity amid oppression and elemental magic. <a href="published-works.html#eatheria">Get it now!</a><br></p>
                 </div>
             </div>
             <footer>
